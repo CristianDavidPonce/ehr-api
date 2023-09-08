@@ -8,7 +8,7 @@ export const config = () => ({
     database: process.env.DB_DATABASE,
     entities: [__dirname + '/**/*.entity{.ts,.js}'],
     migrations: [__dirname + '/../../typeorm-migrations/*.{ts,js}'],
-    synchronize: true,
+    synchronize: false,
     autoLoadEntities: true,
   },
   port: process.env.PORT,

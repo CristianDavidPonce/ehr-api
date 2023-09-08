@@ -9,7 +9,7 @@ export class User extends Record {
   @Column()
   password: string
 
-  @Column()
+  @Column({ type: 'varchar', length: 230 })
   firstName: string
 
   @Column()
